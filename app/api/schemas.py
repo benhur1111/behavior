@@ -16,3 +16,10 @@ class EventRead(EventBase):
     timestamp: datetime
 
     model_config = ConfigDict(from_attributes=True)
+
+class AntigravityRequest(BaseModel):
+    objective: str
+    observations: str
+
+class AntigravityResponse(BaseModel):
+    analysis: str
